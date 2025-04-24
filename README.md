@@ -1,8 +1,27 @@
+
 📘 Example JMenus Configuration
 
-⚠ Note: This is the best example I can give right now until the wiki is finished
+⚠ Note: This is the best example I can provide until the full documentation (wiki) is completed.
 
-⚠: you can click the copy button and test it by yourself in-game!
+You can click the copy button and try it in-game!
+
+🔧 How to Use:
+
+  1- Run the command:
+
+  - /jm create <menu_name>
+
+  - This will create a new menu file.
+
+  2- Navigate to the plugin folder:
+
+  - plugins/JMenus/menus/<your_menu>
+
+  - Open the menu file and paste the example configuration below.
+
+  - Save the file and reload the plugin (or restart the server), and you're good to go! ✅
+
+
 
 ```
 title: '&8&l✦ &e&lExample Menu &8&l✦'
