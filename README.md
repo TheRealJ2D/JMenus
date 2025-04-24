@@ -61,7 +61,7 @@ items:
       - '&8════════════════'
     actions:
       left:
-        - '[message] &aYou\'ve clicked the message action item!'
+        - '[message] &aYou''ve clicked the message action item!'
       right:
         - '[message] &d&l✦ &5&lThis is a fancy message with colors! &d&l✦'
 
@@ -168,7 +168,7 @@ items:
     actions:
       left:
         - '[permission] jmenus.admin:[message] &aYou have admin permissions!'
-        - '[permission] !jmenus.admin:[message] &cYou don\'t have admin permissions!'
+        - '[permission] !jmenus.admin:[message] &cYou don''t have admin permissions!'
 
   economy_action:
     material: GOLD_INGOT
@@ -176,7 +176,7 @@ items:
     name: '&6&lEconomy Action'
     lore:
       - '&8════════════════'
-      - '&7Interacts with the player\'s economy'
+      - '&7Interacts with the player''s economy'
       - '&7when clicked.'
       - ''
       - '&6➤ Left-Click: &7Give 100 money'
@@ -192,7 +192,7 @@ items:
         - '[message] &cYou lost 50 money!'
       shift_left:
         - '[money] has:1000:[message] &aYou have at least 1000 money!'
-        - '[money] !has:1000:[message] &cYou don\'t have 1000 money!'
+        - '[money] !has:1000:[message] &cYou don''t have 1000 money!'
 
   combo_action:
     material: NETHER_STAR
