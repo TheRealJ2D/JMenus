@@ -15,7 +15,7 @@
 
   - plugins/JMenus/menus/<your_menu>
 
-  - Open the menu file and paste the example configuration below.
+  - Open the menu file delete the default config and paste the example configuration below.
 
   - Save the file and reload the plugin "/jm reload" (or restart the server), and you're good to go! ✅
 
