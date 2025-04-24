@@ -19,8 +19,7 @@
 
   - Save the file and reload the plugin (or restart the server), and you're good to go! ✅
 
-
-
+    
 
 ⚠ You can click the copy button and try it in-game!
 ```
