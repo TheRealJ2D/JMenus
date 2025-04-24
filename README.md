@@ -3,8 +3,6 @@
 
 ⚠ Note: This is the best example I can provide until the full documentation (wiki) is completed.
 
-⚠ You can click the copy button and try it in-game!
-
 🔧 How to Use:
 
   1- Run the command:
@@ -23,6 +21,8 @@
 
 
 
+
+⚠ You can click the copy button and try it in-game!
 ```
 title: '&8&l✦ &e&lExample Menu &8&l✦'
 size: 6
