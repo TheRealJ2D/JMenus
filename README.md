@@ -2,7 +2,7 @@
 
 Advanced Menu Creation:
 
-You can take this config as a guide until i release the wiki page :).
+**You can take this config as a guide until i release the wiki page :).**
 
 
 # JMenus Configuration
