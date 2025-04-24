@@ -1,6 +1,8 @@
 📘 Example JMenus Configuration
 
-Note: This is the best example I can give right now until the wiki is finished
+⚠ Note: This is the best example I can give right now until the wiki is finished
+
+⚠: you can click the copy button and test it by yourself in-game!
 
 ```
 title: '&8&l✦ &e&lExample Menu &8&l✦'
