@@ -3,7 +3,7 @@
 
 ⚠ Note: This is the best example I can provide until the full documentation (wiki) is completed.
 
-You can click the copy button and try it in-game!
+⚠ You can click the copy button and try it in-game!
 
 🔧 How to Use:
 
