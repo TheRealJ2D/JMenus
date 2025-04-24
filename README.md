@@ -1,38 +1,28 @@
-# JMenus
-
-Advanced Menu Creation:
-
-**You can take this config as a guide until i release the wiki page :).**
-
-
-# JMenus Configuration
-```
-# Advanced example with all features
-
-settings:
-  debug: false
-  update-check: true
-  use-placeholders: true
-
-# Define your menus here
-menus:
-  # Main menu example with all features
-  main:
-    title: "&8&l✦ &d&lJMenus &5&lShowcase &8&l✦"
-    size: 6  # 6 rows
-    open-sound: "BLOCK_CHEST_OPEN:1:1"
-    close-sound: "BLOCK_CHEST_CLOSE:1:1"
-    
-    # Menu fill item
-    fill-item:
-      material: "BLACK_STAINED_GLASS_PANE"
-      name: " "
-      glow: false
-    
-    # Menu items
-    items:
-      # Message action example
-      message_action:
+title: '&8&l✦ &e&lExample Menu &8&l✦'
+size: 6
+open-sound: BLOCK_CHEST_OPEN:1:1
+close-sound: BLOCK_CHEST_CLOSE:1:1
+command:
+  enabled: true
+fill-item:
+  material: BLACK_STAINED_GLASS_PANE
+  name: ' '
+items:
+  close:
+    material: BARRIER
+    slot: 49
+    name: '&c&lClose Menu'
+    lore:
+    - '&8════════════════'
+    - '&7Click to close this menu.'
+    - '&8════════════════'
+    actions:
+      left:
+      - '[close]'
+      - '[sound] BLOCK_CHEST_CLOSE:1:1'
+     
+      # Message action example     
+  message_action:
         material: "PAPER"
         slot: 10
         name: "&e&lMessage Action"
@@ -49,9 +39,9 @@ menus:
             - "[message] &aYou've clicked the message action item!"
           right:
             - "[message] &d&l✦ &5&lThis is a fancy message with colors! &d&l✦"
-      
-      # Command action example
-      command_action:
+            
+        # Command action example
+  command_action:
         material: "COMMAND_BLOCK"
         slot: 12
         name: "&b&lCommand Action"
@@ -68,9 +58,9 @@ menus:
             - "[command] say I clicked a command action!"
           right:
             - "[command] me used the JMenus plugin"
-      
-      # Console action example
-      console_action:
+            
+        # Console action example
+  console_action:
         material: "REDSTONE_BLOCK"
         slot: 14
         name: "&c&lConsole Action"
@@ -84,9 +74,9 @@ menus:
         actions:
           left:
             - "[console] say %player_name% clicked a console action!"
-      
+
       # Sound action example
-      sound_action:
+  sound_action:
         material: "NOTE_BLOCK"
         slot: 16
         name: "&d&lSound Action"
@@ -106,9 +96,9 @@ menus:
             - "[sound] ENTITY_PLAYER_LEVELUP:1:1"
           shift_left:
             - "[sound] ENTITY_ENDER_DRAGON_AMBIENT:1:0.5"
-      
-      # Broadcast action example
-      broadcast_action:
+            
+                  # Broadcast action example
+  broadcast_action:
         material: "END_CRYSTAL"
         slot: 20
         name: "&6&lBroadcast Action"
@@ -123,8 +113,8 @@ menus:
           left:
             - "[broadcast] &d&l✦ &5&l%player_name% &dused the broadcast action! &d&l✦"
       
-      # Teleport action example
-      teleport_action:
+            # Teleport action example
+  teleport_action:
         material: "ENDER_PEARL"
         slot: 22
         name: "&a&lTeleport Action"
@@ -143,9 +133,9 @@ menus:
           right:
             - "[teleport] 0,100,0"
             - "[message] &aTeleporting to coordinates..."
-      
-      # Permission action example
-      permission_action:
+            
+                 # Permission action example
+  permission_action:
         material: "GOLDEN_HELMET"
         slot: 24
         name: "&e&lPermission Action"
@@ -160,9 +150,9 @@ menus:
           left:
             - "[permission] jmenus.admin:[message] &aYou have admin permissions!"
             - "[permission] !jmenus.admin:[message] &cYou don't have admin permissions!"
-      
-      # Economy action example
-      economy_action:
+            
+                  # Economy action example
+  economy_action:
         material: "GOLD_INGOT"
         slot: 30
         name: "&6&lEconomy Action"
@@ -185,9 +175,9 @@ menus:
           shift_left:
             - "[money] has:1000:[message] &aYou have at least 1000 money!"
             - "[money] !has:1000:[message] &cYou don't have 1000 money!"
-      
-      # Combo action example
-      combo_action:
+            
+                # Combo action example
+  combo_action:
         material: "NETHER_STAR"
         slot: 32
         name: "&5&lCombo Action"
@@ -205,9 +195,9 @@ menus:
             - "[message] &d&l✦ &5&lRunning combo actions! &d&l✦"
             - "[broadcast] &e%player_name% is testing combo actions!"
             - "[console] title %player_name% title {\"text\":\"Combo Action\",\"color\":\"light_purple\",\"bold\":true}"
-      
-      # Sub-menu action example
-      submenu_action:
+            
+                  # Sub-menu action example
+  submenu_action:
         material: "BOOK"
         slot: 40
         name: "&b&lSub-Menu Action"
@@ -221,9 +211,9 @@ menus:
         actions:
           left:
             - "[menu] submenu"
-      
-      # Close action example
-      close_action:
+            
+                  # Close action example
+  close_action:
         material: "BARRIER"
         slot: 49
         name: "&c&lClose Menu"
@@ -239,60 +229,19 @@ menus:
             - "[close]"
             - "[sound] BLOCK_CHEST_CLOSE:1:2"
             - "[message] &cMenu closed!"
-
-  # Sub-menu example
-  submenu:
-    title: "&8&l✦ &b&lJMenus &3&lSub-Menu &8&l✦"
-    size: 3  # 3 rows
-    open-sound: "BLOCK_CHEST_OPEN:1:2"
-    
-    # Menu fill item
-    fill-item:
-      material: "LIGHT_BLUE_STAINED_GLASS_PANE"
-      name: " "
-    
-    # Menu items
-    items:
-      # Player info example
-      player_info:
-        material: "PLAYER_HEAD"
-        slot: 4
-        name: "&b&lPlayer Info"
+            
+            # Sub menu NOTE: You have to create a menu to be able to open it! "/jm create <menu_name>"
+  submenu_action:
+        material: "BOOK"
+        slot: 40
+        name: "&b&lSub-Menu Action"
         lore:
           - "&8════════════════"
-          - "&7Name: &f%player_name%"
-          - "&7Health: &f%player_health%/%player_max_health%"
-          - "&7Food: &f%player_food%"
-          - "&7Gamemode: &f%player_gamemode%"
-          - "&7World: &f%player_world%"
-          - "&7Location: &f%player_x%, %player_y%, %player_z%"
-          - "&8════════════════"
-      
-      # Server info example
-      server_info:
-        material: "COMPASS"
-        slot: 13
-        name: "&3&lServer Info"
-        lore:
-          - "&8════════════════"
-          - "&7Name: &f%server_name%"
-          - "&7Online: &f%server_online%/%server_max_players%"
-          - "&7Version: &f%server_version%"
-          - "&8════════════════"
-      
-      # Back button example
-      back_button:
-        material: "ARROW"
-        slot: 22
-        name: "&c&lBack to Main Menu"
-        lore:
-          - "&8════════════════"
-          - "&7Returns to the main menu"
+          - "&7Opens another menu"
           - "&7when clicked."
           - " "
-          - "&c➤ Left-Click: &7Go back"
+          - "&b➤ Left-Click: &7Open sub-menu"
           - "&8════════════════"
         actions:
           left:
-            - "[menu] main"
-            - "[sound] UI_BUTTON_CLICK:1:1"```
+            - "[menu] test" # test = <menu_name> that you want to open!
