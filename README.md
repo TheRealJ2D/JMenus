@@ -1,5 +1,5 @@
 
-📘 Example JMenus Configuration
+📘 Example JMenus Configuration (All the plugin's features in one menu!)
 
 ⚠ Note: This is the best example I can provide until the full documentation (wiki) is completed.
 
